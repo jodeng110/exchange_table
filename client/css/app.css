@@ -1,0 +1,79 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Nanum Gothic";
+  src: url("../assets/fonts/nanum-gothic/NanumGothic.ttf") format("truetype");
+  src: local(※), url("../assets/fonts/nanum-gothic/NanumGothic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Nanum Gothic";
+  src: url("../assets/fonts/nanum-gothic/NanumGothicBold.ttf") format("truetype");
+  src: local(※), url("../assets/fonts/nanum-gothic/NanumGothicBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
+body {
+  font-family: "Nanum Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.exchange-panel > .title {
+  font-size: 13px;
+  font-weight: bold; }
+
+.exchange-panel > .sub-title {
+  font-size: 13px;
+  color: #626262;
+  font-weight: bold; }
+
+.exchange-panel .exchange-form {
+  width: 720px;
+  height: 100px;
+  background-color: #fafafa;
+  border-top: 1px solid #cdced2;
+  border-left: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea; }
+  .exchange-panel .exchange-form > .form-box {
+    float: left;
+    padding-top: 20px; }
+    .exchange-panel .exchange-form > .form-box:first-child {
+      padding-left: 70px; }
+    .exchange-panel .exchange-form > .form-box .input-form {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      margin-top: 11px;
+      border: 2px solid #bababa;
+      width: 250px;
+      overflow: hidden; }
+      .exchange-panel .exchange-form > .form-box .input-form.in-focus {
+        border: 2px solid #4cab17; }
+      .exchange-panel .exchange-form > .form-box .input-form input[type="text"] {
+        width: 215px;
+        text-align: right;
+        outline: none;
+        border: none;
+        font-size: 16px;
+        font-weight: bold; }
+    .exchange-panel .exchange-form > .form-box select {
+      display: block;
+      width: 250px;
+      height: 25px;
+      background: #fff url("http://static.naver.net/nfinance/bg_select_arw3.gif") no-repeat right center;
+      font-size: 12px;
+      border: 1px solid #ccc;
+      outline: none;
+      appearance: none;
+      -webkit-appearance: none;
+      /* Safari and Chrome */
+      -moz-appearance: none;
+      /* Firefox */
+      -webkit-border-radius: 1px;
+      -moz-border-radius: 1px;
+      border-radius: 1px;
+      padding-left: 10px; }
+  .exchange-panel .exchange-form > .same {
+    float: left;
+    padding: 40px 20px; }
+    .exchange-panel .exchange-form > .same img {
+      width: 28px;
+      height: 15px; }

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html data-ng-app="exchangeTableApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exchange Table With AngularJS</title>
+
+    <!-- build:css -->
+    <link rel="stylesheet" href="./css/app.css"/>
+    <!-- endbuild -->
+  </head>
+  <body data-ng-controller="AppCtrl">
+    {{test}}
+    <div class="exchange-panel">
+      <span class="title">환율 계산기</span><span class="sub-title">(매매기준율 기준)</span>
+
+      <div class="exchange-form">
+        <div class="form-box">
+          <select data-ng-options="getCurrencyLabel(option) for option in exchangeInfoData"
+            data-ng-model="selectedCurrencyBefore"
+            data-ng-change="changeLeftCurrency()"></select>
+          <div class="input-form" data-ng-class="{'in-focus':enterBeforeFocus}">
+            <input type="text" data-ng-model="leftValue"
+              data-ng-focus="enterBeforeFocus = true;"
+              data-ng-blur="enterBeforeFocus = false;"
+              data-ng-keyup="enterLeftValue()"/>{{selectedCurrencyBefore.sign}}
+          </div>
+        </div>
+        <div class="same">
+          <img src="./assets/images/ico_same.gif" alt="equals">
+        </div>
+        <div class="form-box">
+          <select data-ng-options="getCurrencyLabel(option) for option in exchangeInfoData"
+            data-ng-model="selectedCurrencyAfter"
+            data-ng-change="changeRightCurrency()"></select>
+
+          <div class="input-form" data-ng-class="{'in-focus':enterAfterFocus}">
+            <input type="text" data-ng-model="rightValue"
+              data-ng-focus="enterAfterFocus = true;"
+              data-ng-blur="enterAfterFocus = false;"
+              data-ng-keyup="enterRightValue()"/>{{selectedCurrencyAfter.sign}}
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="./lib/js/angular/angular.js"></script>
+
+    <!-- build:js -->
+    <script src="app/app.js"></script>
+    <!-- endbuild -->
+
+  </body>
+</html>

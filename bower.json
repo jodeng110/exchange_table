@@ -1,0 +1,26 @@
+{
+  "name": "exchange_table",
+  "description": "exchange table with AngularJS",
+  "main": "index.js",
+  "authors": [
+    "Jennifer Cho <jennifer.cho@udptechnology.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/jodeng110/exchange_table",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.7"
+  },
+  "install": {
+    "path": {
+      "css": "public/lib/css",
+      "js": "public/lib/js"
+    }
+  }
+}
