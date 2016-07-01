@@ -41,3 +41,5 @@ $ gulp develop
 ```
 
 open Web Browser : http://localhost:3333/
+
+![alt text](exchange_table_result.png "Result")
